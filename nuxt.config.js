@@ -1,3 +1,5 @@
+import * as languages from "./lang";
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -44,17 +46,7 @@ export default {
     defaultLocale: "en",
     vueI18n: {
       fallbackLocale: "en",
-      messages: {
-        en: {
-          welcome: "Welcome",
-        },
-        fr: {
-          welcome: "Bienvenue",
-        },
-        es: {
-          welcome: "Bienvenido",
-        },
-      },
+      messages: { ...languages },
     },
   },
 
